@@ -233,6 +233,18 @@ btnSort.addEventListener('click', function (e) {
   sorted = !sorted;
 });
 
+const eurTousd = 1.1;
+
+const movementsUSD = movements.map(mov => mov * eurTousd);
+
+console.log(movements);
+console.log(movementsUSD);
+
+const movementsUSDfor = [];
+for (const mov of movements) {
+  movementsUSDfor.push(mov * eurTousd);
+}
+console.log(movementsUSDfor);
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
